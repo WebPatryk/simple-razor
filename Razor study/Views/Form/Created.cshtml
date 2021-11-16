@@ -1,0 +1,20 @@
+﻿@model Razor_study.Models.FormModel;
+
+@{
+    ViewData["Title"] = "Created";
+}
+
+<div class="text-left">
+    <h1 class="display-4">Dane z formularza:</h1>
+    @for (var i = 1; i <= Model.Count; i++)
+    {
+        <p> @Model.Name</p>
+    }
+
+    <br />
+    @Html.DisplayNameFor(model => model.Count): <b>@Html.DisplayFor(model => model.Count)</b>
+    <br />
+
+
+</div>
+
